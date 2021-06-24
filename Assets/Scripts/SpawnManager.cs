@@ -17,7 +17,7 @@ public class SpawnManager : MonoBehaviour
         yield return new WaitForSeconds(delayTime);
         if(active)
         {
-            Instantiate(obstacles[Random.Range(0, obstacles.Length)], transform.position, Quaternion.identity);
+            ObjectPoolUtility.Instantiate(obstacles[Random.Range(0, obstacles.Length)], transform.position);
             StartCoroutine("ObstacleGenerator");
         }
         

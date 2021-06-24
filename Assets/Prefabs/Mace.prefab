@@ -11,11 +11,12 @@ GameObject:
   - component: {fileID: 8055715400044912188}
   - component: {fileID: 8055715400044912191}
   - component: {fileID: 8055715400044912161}
-  - component: {fileID: 8055715400044912189}
-  - component: {fileID: 8055715400044912160}
+  - component: {fileID: 701602507619115620}
   - component: {fileID: 8055715400044912163}
+  - component: {fileID: 8055715400044912189}
   - component: {fileID: 8055715400044912190}
   - component: {fileID: 6110944706882212800}
+  - component: {fileID: 823482095517111486}
   m_Layer: 0
   m_Name: Mace
   m_TagString: Untagged
@@ -102,20 +103,7 @@ MonoBehaviour:
   textureSize: 128
   scaleHorizontally: 0
   scaleVertically: 0
---- !u!114 &8055715400044912189
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8055715400044912162}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ec55281db683ae4c908ad5f6baf85bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  obstacleVelocity: {x: -100, y: 0}
---- !u!50 &8055715400044912160
+--- !u!50 &701602507619115620
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -123,19 +111,19 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8055715400044912162}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 0
 --- !u!61 &8055715400044912163
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -162,6 +150,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.28, y: 1.28}
   m_EdgeRadius: 0
+--- !u!114 &8055715400044912189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8055715400044912162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ec55281db683ae4c908ad5f6baf85bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacleVelocity: {x: -100, y: 0}
 --- !u!114 &8055715400044912190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -185,5 +186,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70cdf42095ab41e4faf5a92bcd6156bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &823482095517111486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8055715400044912162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4b7ef13506a3644c9c20cf00484dbca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

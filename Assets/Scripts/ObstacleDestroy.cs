@@ -50,6 +50,6 @@ public class ObstacleDestroy : MonoBehaviour
 
     private void DestrObst()
     {
-        Destroy(gameObject);
+        ObjectPoolUtility.Destroy(gameObject);
     }
 }
