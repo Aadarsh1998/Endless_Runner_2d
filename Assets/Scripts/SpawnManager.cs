@@ -5,15 +5,18 @@ using UnityEngine;
 public class SpawnManager : MonoBehaviour
 {
     public GameObject[] obstacles;
-    float delayTime = 2.0f;
-    bool active = true;
+    public GameObject enemyPrefab;
+    float delayTime = 1.0f;
+    public bool active = true;
 
     void Start()
     {
+        Instantiate(enemyPrefab);
         StartCoroutine("ObstacleGenerator");  
     }
     IEnumerator ObstacleGenerator()
     {
+        delayTime = Random.Range(5.0f, 7.0f);
         yield return new WaitForSeconds(delayTime);
         if(active)
         {
